@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "dk-tabbar": "/components/tabbar/index",
+    "wux-notice-bar": "../../dist/notice-bar/index",
+    "wux-divider": "../../dist/divider/index",
+    "wux-media": "../../dist/media/index"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+}

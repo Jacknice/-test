@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "dk-tabbar": "/components/tabbar/index",
+    "ff-canvas": "../../f2canvas/f2-canvas"
+  },
+  "navigationBarTitleText": "进展",
+  "enablePullDownRefresh": true
+}

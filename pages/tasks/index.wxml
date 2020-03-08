@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<wux-dialog id="wux-dialog" />
+<wux-dialog id="wux-dialog--alert" />
+
+<view class='block' style='margin-top: 20rpx;'>
+  <view class='title'>
+    <text>体重(kg)</text>
+    <text class='plus' bindtap='prompt'>+</text>
+  </view>
+  <view class="run">
+    <view hidden='{{hidden}}' class="run">
+      <ff-canvas id="stepsPan" canvas-id="stepsPan" opts="{{ opts1 }}"></ff-canvas>
+    </view>
+  </view>
+</view>
+<view class='block'>
+  <view class='title'>步数</view>
+  <view class="run">
+    <view hidden='{{hidden}}' class="run">
+      <ff-canvas id="stepsPan" canvas-id="stepsPan" opts="{{ opts }}"></ff-canvas>
+    </view>
+  </view>
+</view>
+
+<dk-tabbar tabBar="{{tabBar}}"></dk-tabbar>

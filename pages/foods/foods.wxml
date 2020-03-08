@@ -1,0 +1,88 @@
+<wux-popup position="bottom" visible="{{show}}" bind:close="onClose">
+  <view class='list layer'>
+    <view class='li'>
+      <image src='/images/mi.jpg'></image>
+      <view class='right'>
+        <view>
+          <view class='name'>米饭</view>
+          <view class='info'>
+            116.0 千卡/100克</view>
+        </view>
+        <view class='rt'>
+          <view class='kg'>1234
+            <text>克</text>
+          </view>
+          <view class='ka'>3961.1(千卡)</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <wux-tabs controlled scroll current="{{ current }}" bindchange="onChange" theme='energized' wux-class='tabs'>
+    <wux-tab key="tab1" title="早餐"></wux-tab>
+    <wux-tab key="tab2" title="午餐"></wux-tab>
+    <wux-tab key="tab3" title="晚餐"></wux-tab>
+    <wux-tab key="tab4" title="上午加餐"></wux-tab>
+    <wux-tab key="tab5" title="下午加餐"></wux-tab>
+    <wux-tab key="tab6" title="晚上加餐"></wux-tab>
+  </wux-tabs>
+
+  <wux-tabs controlled scroll current="{{ val }}" bindchange="onChange1" theme='energized'>
+    <wux-tab key="tab1" title="克"></wux-tab>
+    <wux-tab key="tab2" title="勺"></wux-tab>
+  </wux-tabs>
+  <wux-grids bordered="{{ false }}">
+    <wux-grid label="1" />
+    <wux-grid label="2" />
+    <wux-grid label="3" />
+    <wux-grid label="4" />
+    <wux-grid label="5" />
+    <wux-grid label="6" />
+    <wux-grid label="7" />
+    <wux-grid label="8" />
+    <wux-grid label="9" />
+    <wux-grid label="." />
+    <wux-grid label="0" />
+    <wux-grid label="×" />
+  </wux-grids>
+  <wux-row>
+    <wux-col span="6" class='blid'>
+      <wux-button block type="dark" wux-class='noneborder' bind:click='onClose'>取消
+      </wux-button>
+    </wux-col>
+    <wux-col span="6">
+      <wux-button block type="energized" bordered wux-class='noneborder' bind:click='onClose'>确定
+      </wux-button>
+    </wux-col>
+  </wux-row>
+</wux-popup>
+<view class="page">
+  <view class="page__bd">
+    <view class='search'>
+      <wux-search-bar clear value="{{ value }}" controlled placeholder="请输入食物名称" bind:change="onChange" bind:focus="onFocus" bind:blur="onBlur" bind:confirm="onConfirm" bind:clear="onClear" bind:cancel="photograph" cancelText='拍照' showCancel/>
+    </view>
+    <view class='container1'>
+      <text class='tip'>常记录食物</text>
+      <view class='list'>
+        <view class='li' wx:for='{{listLength}}' bindtap='footClick'>
+          <image src='/images/mi.jpg'></image>
+          <view class='right'>
+            <view>
+              <view class='name'>米饭</view>
+              <view class='info'>
+                <text>116.0</text> 千卡/100克</view>
+            </view>
+          </view>
+        </view>
+        <view class='loading'>
+          <image src='/images/loading.gif'></image>
+          <text>努力加载中...</text>
+        </view>
+      </view>
+    </view>
+    <view class='footer'>
+      <wux-button block type="stable" wux-class='btn'>完成
+        <text class='total'>1</text>
+      </wux-button>
+    </view>
+  </view>
+</view>

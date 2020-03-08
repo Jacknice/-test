@@ -1,0 +1,29 @@
+<!-- pages/mine/mine.wxml -->
+<view class='header'>
+  <view class='person'>
+    <view class='flex'>
+      <image src='https://i.loli.net/2019/05/08/5cd2e94227b9b.png' class='userImg'></image>
+      <text class='userName'>Yesterday</text>
+    </view>
+    <navigator url='/pages/mine/set/set' hover-class='none'><image src='https://i.loli.net/2019/05/08/5cd2ec7fbb8b9.png' class='setting'></image></navigator>
+  </view>
+  <view class='info'>
+    <view>
+      <view>22</view>
+      <text>年龄</text>
+    </view>
+    <view class='middle'>
+      <view>170</view>
+      <text>身高</text>
+    </view>
+    <view>
+      <view>123</view>
+      <text>体重</text>
+    </view>
+  </view>
+</view>
+<wux-cell-group>
+  <wux-cell thumb="https://i.loli.net/2019/05/08/5cd2e9afed1ae.png" title="健康报告" is-link url="/pages/index/index"></wux-cell>
+  <wux-cell thumb="https://i.loli.net/2019/05/08/5cd2e9e64812a.png" title="心愿存储" is-link url="/pages/index/index"></wux-cell>
+</wux-cell-group>
+<dk-tabbar tabBar="{{tabBar}}"></dk-tabbar>

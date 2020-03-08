@@ -1,0 +1,47 @@
+page{
+  background: #f3f3f3;
+}
+.person .userImg{
+  width: 120rpx;
+  height: 120rpx;
+  border: 8rpx solid #fff;
+  margin-right: 15rpx;
+  border-radius: 50%;
+}
+.userName{
+  font-size: 40rpx;
+  color: #fff;
+}
+.header{
+  background: #E99904;
+  padding: 20rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.person .flex{
+  display: flex;
+  align-items: center;
+}
+.person{
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+.setting{
+  width: 60rpx;
+  height: 60rpx;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 33rpx;
+  color: #fff;
+  padding: 20px 40rpx 0;
+  text-align: center;
+}
+.info .middle{
+  border-left: 1rpx solid #fff;
+  border-right: 1rpx solid #fff;
+  width: 50%;
+  text-align: center;
+}

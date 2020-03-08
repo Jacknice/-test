@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "wux-search-bar": "../../dist/search-bar/index",
+    "wux-media": "../../dist/media/index",
+    "wux-popup": "../../dist/popup/index",
+    "wux-tabs": "../../dist/tabs/index",
+    "wux-tab": "../../dist/tab/index",
+    "wux-grids": "../../dist/grids/index",
+    "wux-grid": "../../dist/grid/index"
+  },
+  "navigationBarTitleText": "饮食运动记录"
+}

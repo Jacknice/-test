@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/news/news",
+    "pages/logs/logs",
+    "pages/tasks/index",
+    "pages/mine/mine",
+    "pages/mycenter/mycenter",
+    "pages/mine/set/set",
+    "pages/foods/foods",
+    "pages/motion/motion",
+    "pages/articleDetail/articleDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "健康助手",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FD820A",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbaricon/index.png",
+        "selectedIconPath": "images/tabbaricon/index2.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/tabbaricon/toutiao.png",
+        "selectedIconPath": "images/tabbaricon/toutiao2.png",
+        "text": "日记"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "iconPath": "images/tabbaricon/saoyisao3.png",
+        "selectedIconPath": "images/tabbaricon/saoyisao3.png",
+        "text": "",
+        "isScanit": true
+      },
+      {
+        "pagePath": "pages/tasks/index",
+        "iconPath": "images/tabbaricon/renwu.png",
+        "selectedIconPath": "images/tabbaricon/renwu2.png",
+        "text": "进展"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/tabbaricon/wode.png",
+        "selectedIconPath": "images/tabbaricon/wode2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "wux-button": "../../dist/button/index",
+    "wux-wing-blank": "../../dist/wing-blank/index",
+    "wux-white-space": "../../dist/white-space/index",
+    "wux-row": "../../dist/row/index",
+    "wux-col": "../../dist/col/index",
+    "wux-dialog": "../../dist/dialog/index",
+    "wux-cell-group": "../../dist/cell-group/index",
+    "wux-cell": "../../dist/cell/index",
+    "wux-input": "../../dist/input/index",
+    "wux-select": "../../dist/select/index",
+    "wux-calendar": "../../dist/calendar/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

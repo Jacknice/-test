@@ -1,0 +1,16 @@
+.block{
+  margin-top: 20rpx;
+  background: #fff;
+}
+page{
+  background: #f3f3f3;
+}
+.wux-input__control{
+  text-align: right
+}
+.btn{
+  position: fixed;
+  bottom: 30rpx;
+  left: 30rpx;
+  right: 30rpx;
+}

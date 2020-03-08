@@ -1,0 +1,55 @@
+.container{
+  padding-top: 294rpx;
+  text-align: center;
+}
+.container .food{
+  width: 150rpx;
+  height: 150rpx;
+  margin: auto;
+}
+.nodata{
+  width: 690rpx;
+  padding-top: 150rpx;
+}
+.nodata .btn{
+  margin: 180rpx 0 20rpx;
+}
+.nodata .tip{
+  font-size: 24rpx;
+  color: #999;
+}
+.head{
+  text-align: center;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  z-index: 99;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0
+}
+.head .txt{
+  text-align: center;
+  height: 62rpx;
+  line-height: 62rpx;
+  position: relative;
+}
+.head .num{
+  font-size: 34rpx;
+}
+.head .calendar{
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  right: 0;
+}
+.head .progress{
+  margin: 30rpx 0 20rpx 0;
+}
+.head .block .b text{
+  font-size: 35rpx
+}
+.noneborder{
+  border-radius: 0!important;
+}

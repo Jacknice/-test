@@ -1,0 +1,54 @@
+<page>
+  <view class='head'>
+    <view class="wux-clearfix txt">
+      <text>还可以摄入<text class='num'>2662</text>千卡</text>
+      <image src='/images/calendar.png' class='calendar wux-pull-right'></image>
+    </view>
+    <view class='progress'>
+      <wux-progress active-color="#333" background-color="#E99904" percent="10" strokeWidth='7' />
+      <wux-white-space />
+    </view>
+    <view class='block'>
+      <wux-row>
+        <wux-col span="6" class='blid'>
+          <navigator url='/pages/foods/foods'>
+            <wux-button block type="dark" wux-class='noneborder'>饮食
+              <text>+</text>
+            </wux-button>
+          </navigator>
+        </wux-col>
+        <wux-col span="6">
+          <navigator url='/pages/motion/motion'>
+            <wux-button block type="energized" bordered wux-class='noneborder'>运动
+              <text>+</text>
+            </wux-button>
+          </navigator>
+        </wux-col>
+      </wux-row>
+    </view>
+  </view>
+
+  <view class='container'>
+    <wux-refresher id="wux-refresher" bind:pulling="onPulling" bind:refresh="onRefresh">
+      <!-- <view class="weui-panel weui-panel_access">
+        <view class="weui-panel__hd">文字组合列表</view>
+        <view class="weui-panel__bd">
+          <view class="weui-media-box weui-media-box_text" wx:for="{{ items }}" wx:key="">
+            <view class="weui-media-box__title weui-media-box__title_in-text">{{ item.title }}</view>
+            <view class="weui-media-box__desc">{{ item.content }}</view>
+          </view>
+        </view>
+      </view> -->
+      <view class='nodata'>
+        <image src='/images/food.png' class='food'></image>
+        <view class='tip'>还没有记录</view>
+        <view class='tip'>请点击上方"+"按钮来添加</view>
+
+        <wux-button block type="stable" wux-class='btn'>饮食分析</wux-button>
+        <view class='tip'>完整记录三餐分析才准确</view>
+      </view>
+    </wux-refresher>
+  </view>
+
+</page>
+<dk-tabbar tabBar="{{tabBar}}"></dk-tabbar>

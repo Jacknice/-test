@@ -1,0 +1,15 @@
+<swiper indicator-dots="{{indicatorDots}}" indicator-color='rgba(255,165,0,.4)' indicator-active-color='rgba(255,165,0,.9)' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+<wux-notice-bar loop leading="3000" content="健康饮食健康饮食健康饮食健康饮食健康饮食健康饮食健康饮食健康饮食健康饮食健康饮食" />
+<wux-divider text="健康要闻" dashed/>
+<navigator class='li' wx:for='{{10}}' url='/pages/articleDetail/articleDetail'>
+  <wux-media thumb="http://mobile.pic.people.com.cn/thumbs2/200/150/data/cms/NMediaFile/2019/0507/WIRELESS201905071442514964682984279.jpg" title="标题一" label="由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。" wux-class='li_b'></wux-media>
+</navigator>
+
+
+<dk-tabbar tabBar="{{tabBar}}"></dk-tabbar>

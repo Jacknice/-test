@@ -1,0 +1,31 @@
+<wux-select id="wux-select1" />
+<wux-calendar id="wux-calendar" />
+<view class="page__bd">
+  <view class='block'>
+    <wux-cell-group>
+      <wux-cell title="性别" extra="{{ sex }}" bind:click="selSex"></wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="身高" defaultValue="170" extra="厘米" />
+      </wux-cell>
+      <wux-cell hover-class="none">
+        <wux-input label="体重" defaultValue="123" extra="公斤"></wux-input>
+      </wux-cell>
+      <wux-cell title="生日" extra="{{ birthday }}" bind:click="birthday"></wux-cell>
+    </wux-cell-group>
+  </view>
+  <view class='block'>
+    <wux-cell-group>
+      <wux-cell title="目标" extra="{{ targetVal }}" bind:click="selTarget"></wux-cell>
+      <view hidden='{{hidden}}'>
+        <wux-cell hover-class="none">
+          <wux-input label="目标体重" defaultValue="123" extra="公斤"></wux-input>
+        </wux-cell>
+        <wux-cell title="减重速度" extra="{{ sdVal }}" bind:click="selsd"></wux-cell>
+      </view>
+    </wux-cell-group>
+  </view>
+
+  <view class='btn' bindtap='submit'>
+    <wux-button block type="energized">完成</wux-button>
+  </view>
+</view>

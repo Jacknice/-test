@@ -1,0 +1,12 @@
+<import src="../../wxParse/wxParse.wxml" />
+
+<view class='page'>
+  <view class='header'>
+    <view class='title'>如何让花眼来得晚一些</view>
+    <view class='autho'>作者：主编</view>
+    <view class='time'>2019年05月07日08:39</view>
+  </view>
+</view>
+<view class='content'>
+  <template is="wxParse" data="{{wxParseData:article.nodes}}"></template>
+</view>
